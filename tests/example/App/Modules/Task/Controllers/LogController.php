@@ -2,9 +2,9 @@
 declare(strict_types=1);
 
 
-namespace App\Modules\Task\Controllers;
+namespace Modules\Task\Controllers;
 
-use App\Models\Mysql\RouterLogMysql;
+use Models\Mysql\RouterLogMysql;
 use Wlsh\Router;
 
 class LogController

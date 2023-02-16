@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Models\Mysql;
+namespace Models\Mysql;
 
 use Envms\FluentPDO\Exception;
 use Wlsh\AbstractPdo;

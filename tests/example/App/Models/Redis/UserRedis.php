@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Models\Redis;
+namespace Models\Redis;
 
 use RedisException;
 use Wlsh\AbstractRedis;

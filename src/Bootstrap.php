@@ -460,7 +460,7 @@ class Bootstrap
             $this->routerStartup($uri_arr, 'TASK');
         } catch (Throwable $e) {
             file_put_contents(
-                ROOT_PATH . '/log/task.log',
+                LOG_PATH . '/task.log',
                 PHP_EOL . microtime() . ':' . json_encode(['message' => $e->getMessage(), 'trace' => $e->getTrace()], JSON_THROW_ON_ERROR | 320),
                 FILE_APPEND
             );
@@ -528,7 +528,7 @@ class Bootstrap
     public function onWorkerError(Server $server, int $worker_id, int $worker_pid, int $exit_code, int $signal): void
     {
         file_put_contents(
-            ROOT_PATH . '/log/workerError.log',
+            LOG_PATH . '/workerError.log',
             microtime() . ':' . "onWorkerError: pid:{$worker_pid},code:{$exit_code},signal:{$signal}",
             FILE_APPEND
         );
@@ -556,15 +556,15 @@ class Bootstrap
          */
         switch (count($uri_arr)) {
             case 5:
-                $ctrl = 'App\Modules\\' . ucfirst($uri_arr[1]) . '\Controllers\\' . ucfirst($uri_arr[2]) . '\\' . ucfirst($uri_arr[3]) . 'Controller';
+                $ctrl = 'Modules\\' . ucfirst($uri_arr[1]) . '\Controllers\\' . ucfirst($uri_arr[2]) . '\\' . ucfirst($uri_arr[3]) . 'Controller';
                 $action = $uri_arr[4] . 'Action';
                 break;
             case 4:
-                $ctrl = 'App\Modules\\' . ucfirst($uri_arr[1]) . '\Controllers\\' . ucfirst($uri_arr[2]) . 'Controller';
+                $ctrl = 'Modules\\' . ucfirst($uri_arr[1]) . '\Controllers\\' . ucfirst($uri_arr[2]) . 'Controller';
                 $action = $uri_arr[3] . 'Action';
                 break;
             default:
-                $ctrl = 'App\Controllers\\' . ucfirst($uri_arr[1]) . 'Controller';
+                $ctrl = 'Controllers\\' . ucfirst($uri_arr[1]) . 'Controller';
                 $action = ($uri_arr[2] ?? '') . 'Action';
         }
 

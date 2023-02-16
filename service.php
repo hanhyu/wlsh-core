@@ -89,6 +89,7 @@ function run(string $param = 'produce'): void
     define('WLSH_CORE_PATH', __DIR__);
     define('ROOT_PATH', WLSH_CORE_PATH . DS . 'tests' . DS . 'example');
     define('CONF_PATH', ROOT_PATH . DS . 'config');
+    define('LOG_PATH', ROOT_PATH . DS . 'Log');
 
     $config = require CONF_PATH . DS . 'swoole.php';
 

@@ -2,10 +2,10 @@
 declare(strict_types=1);
 
 
-namespace App\Modules\System\Controllers;
+namespace Modules\System\Controllers;
 
-use App\Domain\System\MenuDomain;
-use App\Models\Forms\SystemMenuForms;
+use Domain\System\MenuDomain;
+use Models\Forms\SystemMenuForms;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
 use Wlsh\Router;

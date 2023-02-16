@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Forms;
+namespace Models\Forms;
 
 
 class SystemUserForms

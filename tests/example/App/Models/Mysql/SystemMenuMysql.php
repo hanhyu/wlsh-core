@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace App\Models\Mysql;
+namespace Models\Mysql;
 
 use Wlsh\AbstractPdo;
 

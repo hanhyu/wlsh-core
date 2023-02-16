@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace App\Modules\System\Controllers;
+namespace Modules\System\Controllers;
 
 use Wlsh\Router;
 

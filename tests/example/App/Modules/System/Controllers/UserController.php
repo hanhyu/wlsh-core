@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Modules\System\Controllers;
+namespace Modules\System\Controllers;
 
-use App\Domain\System\UserDomain;
-use App\Models\Forms\SystemUserForms;
-use App\Models\Redis\UserRedis;
+use Domain\System\UserDomain;
+use Models\Forms\SystemUserForms;
+use Models\Redis\UserRedis;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
 use Wlsh\Router;

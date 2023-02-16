@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Domain\System;
+namespace Domain\System;
 
-use App\Models\Mysql\SystemUserMysql;
+use Models\Mysql\SystemUserMysql;
 use Envms\FluentPDO\Exception;
 use Wlsh\ProgramException;
 

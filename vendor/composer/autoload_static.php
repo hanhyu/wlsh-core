@@ -68,6 +68,8 @@ class ComposerStaticInitacf4a6d72d13ebba659a0c3e72f139d3
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Modules\\' => 8,
+            'Models\\' => 7,
         ),
         'G' => 
         array (
@@ -82,6 +84,7 @@ class ComposerStaticInitacf4a6d72d13ebba659a0c3e72f139d3
         ),
         'D' => 
         array (
+            'Domain\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
@@ -94,10 +97,6 @@ class ComposerStaticInitacf4a6d72d13ebba659a0c3e72f139d3
             'Composer\\Semver\\' => 16,
             'Composer\\Pcre\\' => 14,
             'ClickHouseDB\\' => 13,
-        ),
-        'A' => 
-        array (
-            'App\\' => 4,
         ),
     );
 
@@ -222,6 +221,14 @@ class ComposerStaticInitacf4a6d72d13ebba659a0c3e72f139d3
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Modules\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests/example/App/Modules',
+        ),
+        'Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests/example/App/Models',
+        ),
         'GuzzleHttp\\Stream\\' => 
         array (
             0 => __DIR__ . '/..' . '/ezimuel/guzzlestreams/src',
@@ -241,6 +248,10 @@ class ComposerStaticInitacf4a6d72d13ebba659a0c3e72f139d3
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
+        ),
+        'Domain\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests/example/App/Domain',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -277,10 +288,6 @@ class ComposerStaticInitacf4a6d72d13ebba659a0c3e72f139d3
         'ClickHouseDB\\' => 
         array (
             0 => __DIR__ . '/..' . '/smi2/phpclickhouse/src',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests/example/App',
         ),
     );
 

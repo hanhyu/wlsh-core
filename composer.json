@@ -33,7 +33,9 @@
   "autoload": {
     "psr-4": {
       "Wlsh\\": "./src",
-      "App\\": "tests/example/App"
+      "Modules\\": "tests/example/App/Modules",
+      "Domain\\": "tests/example/App/Domain",
+      "Models\\": "tests/example/App/Models"
     }
   },
   "require-dev": {
